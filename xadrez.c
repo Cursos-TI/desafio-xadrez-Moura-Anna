@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int torre = 5,bispo = 5, rainha = 8, i;
+int torre = 5,bispo = 5, rainha = 8, i, j;
 
 // Desafio de Xadrez - MateCheck
 // Este código inicial serve como base para o desenvolvimento do sistema de movimentação das peças de xadrez.
@@ -36,8 +36,18 @@ int main() {
      printf("Rainha se moveu %d vezes para o lado direito.\n",rainha);
 
 // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
+    printf("\n_Movimento do Cavalo_\n");
+    for(int i = 1; i <= 2 ;i++){
+        printf("%dº movimento para baixo\n",i); 
+        if(i==2){
+        j =1;
+        while(j<=1){
+           printf("%dº movimento para a direita\n",j);
+           j++;
+        }
+    }
+}
+ printf("Cavalo se moveu para baixo direita\n");
 
     // Nível Mestre - Funções Recursivas e Loops Aninhados
     // Sugestão: Substitua as movimentações das peças por funções recursivas.
